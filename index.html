@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Jonas Nagao</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home" onclick="showPage('home')">Home</a></li>
+      <li>
+        <a href="#portfolio" onclick="showPage('portfolio')">Portfólio</a>
+      </li>
+      <li><a href="#anuncios" onclick="showPage('anuncios')">Anúncios</a></li>
+      <li><a href="#contato" onclick="showPage('contato')">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="page">
+    <h1>Bem-vindo ao meu site pessoal</h1>
+    <p>Esta é a página inicial.</p>
+  </section>
+
+  <section id="portfolio" class="page" style="display:none;">
+    <h1>Meu Portfólio</h1>
+    <p>Aqui você verá meus trabalhos.</p>
+  </section>
+
+  <section id="anuncios" class="page" style="display:none;">
+    <h1>Anúncios</h1>
+    <p>Veja aqui meus anúncios atuais.</p>
+  </section>
+
+  <section id="contato" class="page" style="display:none;">
+    <h1>Contato</h1>
+    <form id="contactForm">
+      <label for="name">Nome:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="message">Mensagem:</label><br />
+      <textarea id="message" name="message" required></textarea><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
